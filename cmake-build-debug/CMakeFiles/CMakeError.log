@@ -1,0 +1,16 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/תם לטין/CLionProjects/untitled5/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/9388~1/CLIONP~1/mingw/mingw64/bin/mingw32-make.exe cmTC_756c4/fast && C:/Users/9388~1/CLIONP~1/mingw/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_756c4.dir\build.make CMakeFiles/cmTC_756c4.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/·φ ∞ΦΘ∩/CLionProjects/untitled5/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_756c4.dir/testCCompiler.c.obj
+C:\Users\9388~1\CLIONP~1\mingw\mingw64\bin\gcc.exe    -o CMakeFiles\cmTC_756c4.dir\testCCompiler.c.obj   -c "C:\Users\╫¬╫¥ ╫£╫ר╫ש╫ƒ\CLionProjects\untitled5\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c"
+gcc.exe: error: C:\Users\╫¬╫¥ ╫£╫ר╫ש╫ƒ\CLionProjects\untitled5\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_756c4.dir\build.make:65: CMakeFiles/cmTC_756c4.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/·φ ∞ΦΘ∩/CLionProjects/untitled5/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_756c4/fast] Error 2
+
+
+
