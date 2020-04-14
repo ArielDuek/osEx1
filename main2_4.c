@@ -24,7 +24,7 @@ int cloneFunc(void* input)
     execvp(args[0],args); //make task2.2 s an independent process
 }
 
-int daemonFunc(void* input)
+int daemonFunc()
 {
     char * args[]={"./task2.3",NULL};
     execvp(args[0],args); //make task2.3 s an independent process
@@ -42,7 +42,10 @@ int main()
     }
     else
     {
-        int res2=clone(daemonFunc,children_arr+ARR_SIZE,CLONE_PARENT,0); //Turns on task2.3
+        pid_t pid2 = fork();  //Turns on task2.3
+        if(pid2==0) {
+            daemonFunc();
+        }
         print("parent");
     }
 

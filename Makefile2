@@ -1,0 +1,36 @@
+CC=gcc
+FLAGS=-Wall -g
+LIBFLAGS=-Wall -g -shared
+
+all: task2.1 task2.2 task2.3 task2.4
+
+task2.1:main2_1.o
+	$(CC) $(FLAGS) main2_1.o -o task2.1
+
+task2.2:main2_2.o
+	$(CC) $(FLAGS) main2_2.o -o task2.2
+
+task2.3:main2_3.o
+	$(CC) $(FLAGS) main2_3.o -o task2.3
+
+task2.4:main2_4.o
+	$(CC) $(FLAGS) main2_4.o -o task2.4
+
+main2_1.o: main2_1.c
+	$(CC) $(FLAGS) -c main2_1.c
+
+main2_2.o: main2_2.c
+	$(CC) $(FLAGS) -c main2_2.c
+
+main2_3.o: main2_3.c
+	$(CC) $(FLAGS) -c main2_3.c
+
+main2_4.o: main2_4.c
+	$(CC) $(FLAGS) -c main2_4.c
+
+.PHONY: clean all
+
+clean:
+	rm -f  *.o  task2.1 task2.2 task2.3 task2.4
+
+
